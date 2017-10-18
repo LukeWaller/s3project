@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Purchase</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            {% for product in products %}
+                <tr>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.description }}</td>
+                    <td>${{ product.price }}</td>
+                    <td><form action="/payment-accepted/" method="POST">
+
+ {%csrf_token%}
+                <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_rwiyKP4l1nv6G79RndlFCoa9"
+                    data-amount="{% widthratio product.price 1 100 %}"
+                    data-name="{{ product.name }}"
+                    data-description="{{ product.description }}"
+                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                    data-locale="auto"
+                    data-zip-code="true"
+                    data-currency="gbp">
+                </script>
+                    </form></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
