@@ -27,11 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# PayPal Settings
-SITE_URL = 'http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
-PAYPAL_RECEIVER_EMAIL = 'luke.ftc@icloud.com'
-
+SITE_ID = 1
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,15 +41,15 @@ INSTALLED_APPS = [
     'home',
     'accounts',
     'blog',
-    'django.contrib.sites',  
+    'django.contrib.sites',
+    'django.contrib.flatpages',  
     'disqus',
     'products',
-    'paypal.standard.ipn',
-    'paypal_store',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
