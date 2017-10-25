@@ -35,5 +35,5 @@ urlpatterns = [
     url(r'^pages/', include('django.contrib.flatpages.urls')),
     url(r'^thankyou/$', home_views.get_thanks, name='thankyou'),
 
-
 ]
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

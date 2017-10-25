@@ -1,0 +1,65 @@
+.navbar-form input, .form-inline input {
+    width: auto;
+}
+
+.navbar-logo {
+    position: fixed;
+    background-image: url('/media/logo3.png');
+    background-position: left;
+    width: 200px;
+    height: 46px;
+    background-repeat: no-repeat;
+    margin-top: 0.3%;
+}
+
+#product {
+    text-align: center;
+    display: inline;
+}
+.modal-content {
+    height: 20%;
+}
+
+#modalHeader {
+    margin: 0px 0px 0px 0px;
+}
+
+#post {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+}
+#postDetail {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+ 
+#flatPage {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.btn-primary:hover {
+    background: #0086b3;
+}
+
+label {
+    color: #0e67af;
+}
+
+
+ 
