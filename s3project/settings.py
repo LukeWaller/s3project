@@ -139,8 +139,9 @@ AUTHENTICATION_BACKENDS = (
     'accounts.backends.EmailAuth',
 )
 
-DISQUS_API_KEY = 'BK7KU409sjdTWMSO3yDOn3aBMaH9g6FlnnuXrGrTEaXyhYr8mIQyIIECEgW9vBe7'
-DISQUS_WEBSITE_SHORTNAME = 'crown-project'
+#DISQUS_API_KEY = 'BK7KU409sjdTWMSO3yDOn3aBMaH9g6FlnnuXrGrTEaXyhYr8mIQyIIECEgW9vBe7'
+
+DISQUS_WEBSITE_SHORTNAME = 'munkipunkia'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
