@@ -47,7 +47,9 @@ The websites core uses the **Django** Framework run by **Python**. Django connec
 
 
 ## Testing
-- All testing has been done throughout the duration of the project using chrome and firefox.The mobile responsive features tested by resizing the browser windows in both chrome and firefox
+- All testing has been done throughout the duration of the project using chrome and firefox.The mobile responsive features tested by resizing the browser windows in both chrome and firefox.
+
+- Disqus comments failed to work and so where omitted.
  
 ## Contributing
 
