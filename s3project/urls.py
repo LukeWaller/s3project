@@ -20,6 +20,7 @@ from home import views as home_views
 from django.views.static import serve
 from .settings import MEDIA_ROOT
 from products import views as product_views
+from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
@@ -37,4 +38,5 @@ urlpatterns = [
     url(r'^thankyou/$', home_views.get_thanks, name='thankyou'),
 
 ]
+
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
