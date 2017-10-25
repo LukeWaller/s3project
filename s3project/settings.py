@@ -139,8 +139,8 @@ AUTHENTICATION_BACKENDS = (
     'accounts.backends.EmailAuth',
 )
 
-DISQUS_API_KEY = 'yZD9hxa2uNkjU6GhyqqoHe1lCulUlsPvQG2YiU0LEXMyV4df1RYj0ppSHEvqYXwF'
-DISQUS_WEBSITE_SHORTNAME = 'forthecrownblog'
+DISQUS_API_KEY = 'BK7KU409sjdTWMSO3yDOn3aBMaH9g6FlnnuXrGrTEaXyhYr8mIQyIIECEgW9vBe7'
+DISQUS_WEBSITE_SHORTNAME = 'crown-project'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
