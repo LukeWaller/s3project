@@ -25,7 +25,7 @@ SECRET_KEY = 'y4l_$-izj8q44#6fu5rhzppsk=hyoy8ygmo1-(q-$zb0uj)4*c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['for-the-crown.herokuapp.com']
 
 SITE_ID = 1
 # Application definition
