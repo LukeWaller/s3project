@@ -3,27 +3,25 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Our Simple Site</title>
+    <title>For The Crown Clothing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
 </head>
+
 <body>
 
-<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+    <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
         <div class='container'>
             <div class="navbar-header">
                 <a class="navbar-logo" href="{% url 'index' %}"></a>
             
-            <button type="button" class="navbar-toggle" 
-                data-toggle="collapse" data-target="#ftcCollapsingList">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
+                <button type="button" class="navbar-toggle" 
+                    data-toggle="collapse" data-target="#ftcCollapsingList">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
 
             <ul id="ftcCollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
@@ -31,7 +29,7 @@
                 <li><a href="/products/">Shop</a></li>
                 <li><a href="/pages/about/">About</a></li>
                 <li><a href="{% url 'blog' %}">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/contact/">Contact</a></li>
                 {% if not user.is_authenticated %}
                 <li><a href="{% url 'register' %}">Register</a></li>
                 <li><a href="{% url 'login' %}">Log In</a></li>
@@ -41,6 +39,7 @@
             </ul>
         </div>
     </nav>
+
     {% if messages %}
         <div class="alert alert-success">
             <div class="messages">
@@ -55,11 +54,11 @@
        {% block content %}
        {% endblock %}
    </div>
-</div>
 </body>
  
 <!-- script references -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="{% static 'js/shop.js' %}"></script>
+
 </html>

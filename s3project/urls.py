@@ -24,6 +24,7 @@ from products import views as product_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home_views.get_index, name='index'),
+    url(r'^contact/$', home_views.contact, name='contact'),
 	url(r'^register/$', accounts_views.register, name='register'),
 	url(r'^profile/$', accounts_views.profile, name='profile'),
 	url(r'^login/$', accounts_views.login, name='login'),
@@ -32,5 +33,7 @@ urlpatterns = [
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
     url(r'^products/$', product_views.all_products),
     url(r'^pages/', include('django.contrib.flatpages.urls')),
+    url(r'^thankyou/$', home_views.get_thanks, name='thankyou'),
+
 
 ]
