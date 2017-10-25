@@ -12,6 +12,10 @@
     margin-top: 0.3%;
 }
 
+body {
+    padding-top: 70px;
+}
+
 #product {
     text-align: center;
     display: inline;
