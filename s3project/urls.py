@@ -20,6 +20,7 @@ from home import views as home_views
 from django.views.static import serve
 from .settings import MEDIA_ROOT
 from products import views as product_views
+from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
